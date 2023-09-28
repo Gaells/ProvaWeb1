@@ -27,9 +27,9 @@ function moverBola() {
   const posX = Math.floor(Math.random() * (divPaiWidth - tamanhoBola));
   const posY = Math.floor(Math.random() * (divPaiHeight - tamanhoBola));
 
-  bola.style.right = posX + "px";
-  bola.style.bottom = posY + "px";
+  bola.style.transform = `translate(${posX}px, ${posY}px)`;
 }
+
 
 function atualizarJogo() {
   tamanhoBola *= 0.9;
